@@ -7,6 +7,8 @@ body {
                          "comments sidebar";
     margin-top: 50px;
     margin: 50px 20px 0 20px;
+
+    font-family: roboto, arial, sans-serif;
 }
 
 /* Header and Header elements */
@@ -20,7 +22,7 @@ header {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    background-color: red;
+    background-color: #c00;
 
     height: 50px;
     width: 100vw;
@@ -85,7 +87,7 @@ header {
 .suscribe-btn {
     grid-area: suscribe;
     border-style: none;
-    background: red;
+    background: #c00;
     color: white;
     font-size: x-large;
     font-weight: bold;
@@ -93,6 +95,21 @@ header {
 
 
 /* Sidebar and it's elemnts (mainly mini-video) */
+.categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.categories p {
+    margin: 5px 5px;
+    background-color: lightgray;
+    padding: 5px 10px;
+    border-radius: 15px;
+    min-width: 30px;
+    text-align: center;
+}
+
 .mini-video {
     display: flex;
     flex-direction: row;
@@ -119,3 +136,52 @@ header {
 
 
 /* Comment's section and it's elements */
+.comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.comment img {
+    border-radius: 50%;
+    align-self: baseline;
+    margin: 0 5px;
+}
+
+.comment-data {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+}
+
+.comment-user {
+    font-weight: bold;
+}
+
+.comment-age{
+    padding-left: 5px;
+    color: #a3a3a3;
+    font-weight: lighter;
+}
+
+.comment-content {
+    margin: 10px 5px;
+    white-space: pre-line;
+    font-size: normal;
+    line-height: 150%;
+}
+
+.comment button{
+    background: none;
+    border-style: none;
+    color:#a3a3a3;
+    font-size: normal;
+    font-weight: bold;
+}
+
+.comment-score{
+    color:#a3a3a3;
+    font-size: large;
+    font-weight: bold;
+}
