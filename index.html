@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>NABM's youtube</title>
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="styles.css">
         <script src="script.js" defer></script>
     </head>
@@ -13,7 +14,22 @@
             <div></div>
         </header>
         <section class="current-video">
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/V74l_zS1x8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video controls preload="metadata">
+                <source src="assets/main-video.mp4" type="video/mp4">
+            </video>
+            <h1>Contributing to Open Source Part I: The Easy Way</h1>
+            <div class=info-menu>
+                <div class=views-date>
+                    <p>63.575 views</p>
+                    <span>*</span>
+                    <p>28 feb 2014</p>
+                </div>
+                <div class=description>
+                    <p>How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of </p>
+                    <button>show more</button>
+                </div>
+                <button class="suscribe-btn">suscribe</button>
+            </div>
         </section>
         <section class="other-videos">
         </section>

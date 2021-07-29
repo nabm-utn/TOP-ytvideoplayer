@@ -1,0 +1,90 @@
+body {
+    display: grid;
+    grid-template-columns: minmax(60vw, auto) minmax(30vw, auto);
+    grid-template-rows: minmax(40vh, auto) auto;
+    grid-template-areas: "video sidebar"
+                         "comments sidebar";
+    margin-top: 50px;
+    margin: 50px 20px 0 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    margin-left: -20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red;
+
+    height: 50px;
+    width: 100vw;
+}
+
+.current-video {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+}
+
+.current-video video {
+    width: 60vw;
+}
+
+.current-video h1 {
+    text-align: left;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.info-menu {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas: "topinfo topmenu topmenu"
+                         "description  description suscribe"
+                         "description  description none";
+}
+
+.views-date {
+    grid-area: topinfo;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.views-date p {
+    margin: 5px;
+}
+
+.info-menu .description {
+    grid-area: description;
+}
+
+.info-menu .description p {
+    line-height: 150%;
+}
+
+.info-menu .description button {
+    background: none;
+    border-style: none;
+    color: #a3a3a3;
+    font-weight: 600;
+}
+
+.suscribe-btn {
+    grid-area: suscribe;
+    border-style: none;
+    background: red;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+}
+
