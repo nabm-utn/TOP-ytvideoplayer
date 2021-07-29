@@ -1,3 +1,4 @@
+/* Main layout */
 body {
     display: grid;
     grid-template-columns: minmax(60vw, auto) minmax(30vw, auto);
@@ -8,6 +9,7 @@ body {
     margin: 50px 20px 0 20px;
 }
 
+/* Header and Header elements */
 header {
     position: fixed;
     top: 0;
@@ -24,6 +26,7 @@ header {
     width: 100vw;
 }
 
+/* Current video and Current video elements */
 .current-video {
     display: flex;
     flex-direction: column;
@@ -88,3 +91,31 @@ header {
     font-weight: bold;
 }
 
+
+/* Sidebar and it's elemnts (mainly mini-video) */
+.mini-video {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+}
+
+.mini-video img {
+    width: 168px;
+    height: 94px;
+    margin: 0 5px 5px 0;
+}
+
+.mini-video-data {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+}
+
+.mini-views-date {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/* Comment's section and it's elements */
