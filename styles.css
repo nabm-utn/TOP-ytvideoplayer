@@ -5,9 +5,7 @@ body {
     grid-template-rows: minmax(40vh, auto) auto;
     grid-template-areas: "video sidebar"
                          "comments sidebar";
-    margin-top: 50px;
-    margin: 50px 20px 0 20px;
-
+    margin: 70px 20px 0 20px;
     font-family: roboto, arial, sans-serif;
 }
 
@@ -214,12 +212,20 @@ header div button {
 }
 
 .categories p {
+    min-width: 30px;
     margin: 5px 5px;
-    background-color: lightgray;
     padding: 5px 10px;
     border-radius: 15px;
-    min-width: 30px;
+    background-color: lightgray;
+    border: 1px solid #b3b3b3;
     text-align: center;
+}
+
+.categories .selected-category {
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: bold;
 }
 
 .mini-video {
