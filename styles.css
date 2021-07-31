@@ -108,6 +108,7 @@ header div button {
                          "description  description none";
 
     border: none;
+    border-top: 1px solid #d8d8d8;
     border-bottom: 1px solid #d8d8d8;
     padding: 5px;
 }
@@ -141,47 +142,55 @@ header div button {
     align-items: center;
 }
 
-.info-menu .description {
+.info-menu .description-box {
     grid-area: description;
-    border-top: 1px solid #d8d8d8;
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-template-columns: 50px auto;
+    grid-template-areas: "op-pic op-info"
+                         "none   description";
 }
 
-.op-info {
-    display: flex;
-    flex-direction: row;
-}
 
-.op-info img {
+.description-box img {
     border-radius: 50%;
+    grid-area: op-pic;
 }
 
-.op-info div {
+.op-info  {
+    grid-area: op-info;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: baseline;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
-.op-info div .op-name {
+.op-info .op-name {
     font-weight: bold;
     padding-bottom: 5px;
 }
 
-.op-info div .op-subs {
+.op-info .op-subs {
     color: #a3a3a3;
     font-size: small;
 }
 
-.info-menu .description-p {
+.description-box .description-p {
+    grid-area: description;
+    margin: 10px;
     line-height: 150%;
+    font-size: small;
 }
 
-.info-menu .description-p button {
+.description-box .description-p button {
+    margin-left: -5px;
+    margin-top: 10px;
     background: none;
     border-style: none;
     color: #a3a3a3;
     font-weight: 600;
+    text-align: left;
 }
 
 .suscribe-btn {
