@@ -50,7 +50,7 @@ header form {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    width: 300px;
+    width: 600px;
     height: 25px;
     padding: 0;
     border: 1px solid #a3a3a3;
@@ -60,16 +60,22 @@ header form {
 
 .search-form input {
     border: 0 none #a3a3a3;
-    width: 250px;
+    width: 530px;
     outline: none;
 }
 
 .search-button {
     height: 25px;
-    width: 40px;
+    width: 60px;
     margin: 0;
     padding: 0;
     border: 0 none #a3a3a3;
+    background: #e8e8e8;;
+}
+
+header div button {
+    margin-right: 10px;
+    margin-left: 0;
 }
 
 /* Current video and Current video elements */
@@ -89,7 +95,8 @@ header form {
 .current-video h1 {
     text-align: left;
     font-weight: 600;
-    font-size: x-large;
+    font-size: large;
+    margin: 5px;
 }
 
 .info-menu {
@@ -99,6 +106,10 @@ header form {
     grid-template-areas: "topinfo topmenu topmenu"
                          "description  description suscribe"
                          "description  description none";
+
+    border: none;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 5px;
 }
 
 .views-date {
@@ -107,6 +118,8 @@ header form {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    margin: 5px 0;
+    font-size: small;
 }
 
 .views-date p {
@@ -115,6 +128,7 @@ header form {
 
 .info-menu .description {
     grid-area: description;
+    border-top: 1px solid #d8d8d8;
 }
 
 .info-menu .description p {
@@ -130,10 +144,13 @@ header form {
 
 .suscribe-btn {
     grid-area: suscribe;
+    height: 40px;
+    margin: 10px 5px;
     border-style: none;
+    border-radius: 2px;
     background: #c00;
     color: white;
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
 }
 
