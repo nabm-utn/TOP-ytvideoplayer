@@ -259,6 +259,7 @@ header div button {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin: 15px 0;
 }
 
 .comment img {
@@ -290,16 +291,22 @@ header div button {
     line-height: 150%;
 }
 
+.comment-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 30px;
+    color:#a3a3a3;
+    font-size: small;
+    font-weight: bold;
+}
+
 .comment button{
+    height: 26px;
     background: none;
     border-style: none;
     color:#a3a3a3;
     font-size: normal;
-    font-weight: bold;
-}
-
-.comment-score{
-    color:#a3a3a3;
-    font-size: large;
     font-weight: bold;
 }
