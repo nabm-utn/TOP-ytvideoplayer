@@ -126,6 +126,21 @@ header div button {
     margin: 5px;
 }
 
+.current-video-menu {
+    grid-area: topmenu;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.current-video-menu button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .info-menu .description {
     grid-area: description;
     border-top: 1px solid #d8d8d8;
