@@ -146,11 +146,38 @@ header div button {
     border-top: 1px solid #d8d8d8;
 }
 
-.info-menu .description p {
+.op-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.op-info img {
+    border-radius: 50%;
+}
+
+.op-info div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-left: 5px;
+}
+
+.op-info div .op-name {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.op-info div .op-subs {
+    color: #a3a3a3;
+    font-size: small;
+}
+
+.info-menu .description-p {
     line-height: 150%;
 }
 
-.info-menu .description button {
+.info-menu .description-p button {
     background: none;
     border-style: none;
     color: #a3a3a3;
