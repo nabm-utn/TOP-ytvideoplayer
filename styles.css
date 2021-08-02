@@ -246,12 +246,33 @@ header div button {
     align-items:baseline;
 }
 
+.mini-video-title {
+    font-size: small;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.mini-video-user {
+    font-size: small;
+    font-size: 0.6 em;
+    line-height: 1.5em;
+    font-weight: bold;
+    color: #b3b3b3;
+}
+
 .mini-views-date {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
+.mini-views-date p {
+    font-size: small;
+    font-size: 0.5 em;
+    line-height: 1.5em;
+
+    color: #b3a3a3
+}
 
 /* Comment's section and it's elements */
 .comment {
