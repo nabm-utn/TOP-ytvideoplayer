@@ -5,7 +5,7 @@ body {
     grid-template-rows: minmax(40vh, auto) auto;
     grid-template-areas: "video sidebar"
                          "comments sidebar";
-    margin: 70px 20px 0 20px;
+    margin: 70px 50px 0 50px;
     font-family: roboto, arial, sans-serif;
 }
 
@@ -36,7 +36,7 @@ header {
     justify-content: space-between;
     background-color: #fff;
     height: 50px;
-    width: 100vw;
+    width: 95vw;
 }
 
 header form {
