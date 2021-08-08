@@ -275,6 +275,25 @@ header div button {
 }
 
 /* Comment's section and it's elements */
+
+.comments-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.comments-menu .material-icons{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.comments-menu .sortby {
+    font-weight: bold;
+    color: #434343;
+    text-transform: uppercase;
+}
+
 .comment {
     display: flex;
     flex-direction: row;
