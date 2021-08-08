@@ -294,6 +294,32 @@ header div button {
     text-transform: uppercase;
 }
 
+.new-comment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+.new-comment img {
+    border-radius: 50%;
+    height: 48px;
+}
+
+.new-comment input {
+    height: 30px;
+    width: 100%;
+    outline: none;
+    background-color: none;
+    border: none;
+    border-bottom: 1px solid #535353;
+    margin-left: 10px;
+    line-height: 150%;
+    font-size: medium;
+}
+
 .comment {
     display: flex;
     flex-direction: row;
